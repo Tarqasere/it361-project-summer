@@ -101,3 +101,108 @@ body {
    .landing-page-left {
      width: 550px
    }
+   /*for all images*/
+
+   .image-container {
+      border-radius: 20px;
+     width: 700px;
+     box-shadow: 0 0 10px rgba(37, 8, 43, 0.3);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     filter: drop-shadow(0 0 5px rgba(66, 54, 240, 0.3));
+   }
+   .image-container:hover {
+     transform: scale(1.05);
+     box-shadow: 0 0 20px rgba(37, 8, 43, 0.5);
+     filter: drop-shadow(0 0 15px #0e046d) drop-shadow(0 0 30px #08072c);
+   }
+   .landing-page-left {
+     width: 550px
+   }
+/*events card*/
+.Events-container  {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Events-container span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1b24ad;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.Events-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.Events-Header h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #070488;
+}
+
+.Event-cards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.card {
+  width: 280px;
+  height: 290px; 
+}
+
+.card-effect {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+ box-shadow: 0 0 10px rgba(37, 8, 43, 0.3);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(66, 54, 240, 0.3));
+}
+
+.card .thumb {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  background-color: #0d122b;
+  display: block;
+}
+
+.card-info {
+  background-color: #5045ee;
+  height: 170px;
+  padding: 10px;
+  color: white;
+  box-sizing: border-box; 
+}
+
+.card-name p {
+  color: #d1cfff;
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.card-name h3 {
+  margin: 8px 0 0 0;
+  font-size: 1.4rem;
+}
+
+.card-effect:hover {
+   transform: scale(1.05);
+ box-shadow: 0 0 20px rgba(37, 8, 43, 0.5);
+  filter: drop-shadow(0 0 15px #0e046d) drop-shadow(0 0 30px #08072c);
+}
+   
+   

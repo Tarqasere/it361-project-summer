@@ -59,3 +59,45 @@ body {
   filter: drop-shadow(0 0 15px #5285f5) drop-shadow(0 0 30px #2d18a1);
   background-color: #070225;
 }
+
+      /* landing-main-page*/
+
+        .landing-page {
+      width: "100";
+       background-color: #574ddd;
+       display: flex;
+       justify-content: space-between;
+       padding:5px 30px;
+       align-items: center;
+       color: #fff;
+       border-radius: 0 0 20px 20px;
+     }
+   .landing-page-action input{
+    
+     border-radius: 50px;
+     border: none;
+     outline: none;
+     height: 30px;
+     padding: 0 10px;
+   }
+   .landing-page-action:hover input{
+      transform: scale(1.05);
+     box-shadow: 0 0 20px rgba(37, 8, 43, 0.5);
+     filter: drop-shadow(0 0 15px #3437e9) drop-shadow(0 0 30px #567cf7);
+    }
+
+   
+   
+   .landing-page-action button{
+     border-radius: 50px;
+     border: none;
+     outline: none;
+     height: 30px;
+     padding: 0 10px;
+     background-color: #111052;
+     color: rgb(240, 235, 240);
+   }
+ 
+   .landing-page-left {
+     width: 550px
+   }

@@ -1,0 +1,61 @@
+body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+    }
+    .header {
+      background-color: #1b213d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25;
+      border-radius: 0 0 0 0 ;
+    }
+    .logo {
+      width: 80px;
+      transform: transform 1.3s ease, filter 0.3s ease;
+      filter: drop-shadow(0 0 5px rgba(51, 86, 241, 0.3));
+    }
+    .logo:hover {
+      transform: scale(1.08);
+      filter: drop-shadow(0 0 15px #d8dce4) drop-shadow(0 0 30px #c2c1d8) ;
+      
+    }
+    .header-links a {
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    .header-links a:hover {
+      background-color: #547ff7;
+       transform: scale(1.05);
+     box-shadow: 0 0 20px rgba(37, 8, 43, 0.5);
+     filter: drop-shadow(0 0 15px #6e80e6) drop-shadow(0 0 30px #5085f7);
+    }
+    .header-links button {
+      background-color: #5443e9;
+      color: rgb(240, 235, 240);
+      padding: 10px 30px;
+      border: none;
+      border-radius: 15px;
+    }
+                
+          /*For button*/
+          .btn {
+  background-color: #3235e2;
+  color: rgb(222, 224, 245);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(1, 1, 36, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(67, 21, 233, 0.3));
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(74, 71, 238, 0.5);
+  filter: drop-shadow(0 0 15px #5285f5) drop-shadow(0 0 30px #2d18a1);
+  background-color: #070225;
+}

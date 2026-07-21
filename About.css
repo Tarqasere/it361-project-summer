@@ -1,0 +1,137 @@
+:root{
+    --main:#0e046d;
+    --dark:#08072c;
+    --hover:#25082b;
+    --light:#d1cfff;
+    --white:#ffffff;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#333;
+}
+
+h1{
+    background:linear-gradient(90deg,var(--dark),var(--main));
+    color:white;
+    text-align:center;
+    padding:22px;
+    margin:0;
+}
+
+h2{
+    color:var(--main);
+    border-left:5px solid var(--main);
+    padding-left:10px;
+    margin-top:35px;
+}
+
+p{
+    line-height:1.6;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:var(--light);
+    margin:30px 0;
+}
+
+form{
+    background:white;
+    border:1px solid var(--light);
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 0 12px rgba(14,4,109,.08);
+}
+
+label{
+    color:var(--main);
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:15px;
+    border:1px solid var(--light);
+    border-radius:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:var(--main);
+    box-shadow:0 0 10px rgba(14,4,109,.25);
+}
+
+button{
+    padding:10px 22px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button[type="submit"]{
+    background:var(--main);
+    color:white;
+}
+
+button[type="submit"]:hover{
+    background:var(--hover);
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(37,8,43,.5);
+    filter:drop-shadow(0 0 10px #0e046d);
+}
+
+button[type="reset"]{
+    background:white;
+    color:var(--main);
+    border:1px solid var(--main);
+}
+
+button[type="reset"]:hover{
+    background:var(--light);
+}
+
+body > p:last-child{
+    margin-top:40px;
+    background:linear-gradient(90deg,var(--dark),var(--main));
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+
+.team-members{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.member{
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    background: white;
+    color: var(--main);
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(14,4,109,.1);
+    transition: .3s;
+}
+
+.member:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(37,8,43,.3);
+}

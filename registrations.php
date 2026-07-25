@@ -1,117 +1,119 @@
 <?php
-$filePath = __DIR__ . "/data/registrations.csv";
-$registrations = [];
 
-// Read registrations from the CSV file
+$filePath = "data_registrations.csv";
+
+$registrations = array();
+
 if (file_exists($filePath)) {
+
     $file = fopen($filePath, "r");
 
-    if ($file !== false) {
-        // Skip the first row because it contains column headings
-        fgetcsv($file);
+    if ($file != false) {
 
-        while (($row = fgetcsv($file)) !== false) {
+        while (($row = fgetcsv($file)) != false) {
+
             if (count($row) >= 5) {
                 $registrations[] = $row;
             }
+
         }
 
         fclose($file);
     }
 }
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Registration List</title>
+    <meta charset="UTF-8">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-            background-color: #f4f6f8;
-        }
 
-        main {
-            max-width: 1100px;
-            margin: auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 8px;
+        body {
+            font-family: Arial;
+            margin: 30px;
         }
 
         table {
-            width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            width: 100%;
         }
 
-        th,
-        td {
-            border: 1px solid #cccccc;
-            padding: 12px;
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
             text-align: left;
         }
 
         th {
-            background-color: #1f4e78;
-            color: white;
+            background-color: lightgray;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        .message {
-            padding: 15px;
-            background-color: #fff3cd;
-            border: 1px solid #ffe69c;
-        }
     </style>
+
 </head>
 
 <body>
-    <main>
-        <h1>Registration List</h1>
 
-        <?php if (empty($registrations)): ?>
+<h1>Registration List</h1>
 
-            <p class="message">No registrations have been submitted yet.</p>
+<?php
 
-        <?php else: ?>
+if (count($registrations) == 0) {
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        <th>Student ID</th>
-                        <th>Email</th>
-                        <th>Event ID</th>
-                        <th>Registration Date</th>
-                    </tr>
-                </thead>
+    echo "<p>No registrations found.</p>";
 
-                <tbody>
-                    <?php foreach ($registrations as $registration): ?>
-                        <tr>
-                            <td><?= htmlspecialchars($registration[0]) ?></td>
-                            <td><?= htmlspecialchars($registration[1]) ?></td>
-                            <td><?= htmlspecialchars($registration[2]) ?></td>
-                            <td><?= htmlspecialchars($registration[3]) ?></td>
-                            <td><?= htmlspecialchars($registration[4]) ?></td>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
+} else {
 
-        <?php endif; ?>
+?>
 
-        <p>
-            <a href="index.php">Return to Home Page</a>
-        </p>
-    </main>
+<table>
+
+    <tr>
+        <th>Student Name</th>
+        <th>Student ID</th>
+        <th>Email</th>
+        <th>Event ID</th>
+        <th>Date</th>
+    </tr>
+
+    <?php
+
+    foreach ($registrations as $row) {
+
+        echo "<tr>";
+
+        echo "<td>" . $row[0] . "</td>";
+        echo "<td>" . $row[1] . "</td>";
+        echo "<td>" . $row[2] . "</td>";
+        echo "<td>" . $row[3] . "</td>";
+        echo "<td>" . $row[4] . "</td>";
+
+        echo "</tr>";
+    }
+
+    ?>
+
+</table>
+
+<?php
+
+}
+
+?>
+
+<br>
+
+<a href="register.php">Back to Registration</a>
+
 </body>
+
 </html>

@@ -355,3 +355,121 @@ body {
    box-shadow:0 0 20px rgba(37,8,43,.3);
 } 
    
+
+/*Made by Mohamed Bafakeh*/
+/* Base margins for the page layout */
+body{
+    margin: 0px;
+}
+main{
+    margin: 20px;
+}
+
+/* Page titles */
+h1{
+    text-align: center;
+}
+
+/* Header background color */
+.hdr{
+    background-color: bisque;
+    padding: 20px;
+}
+
+/* Navigation bar list styling */
+.navbar ul{
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Navigation menu links */
+.navbar a{
+    color: rgb(44, 43, 43);
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Hover effect on navbar buttons */
+.navbar a:hover{
+    background-color: rgb(134, 61, 61);
+    color: white;
+    border-radius: 5px;
+}
+.navbar li{
+    text-align: center;
+}
+
+/* Sizing for event images */
+.mathImg{
+    width: 500px;
+    height: auto;
+}
+
+.phyImg{
+    width: 500px;
+    height: auto;
+}
+
+.robImg{
+    width: 500px;
+    height: auto;
+}
+
+/* Math event card */
+.div1{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(172, 86, 253);
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+/* Physics event card */
+.div2{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(216, 173, 255);
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 1200px;
+    padding: 10px;
+}
+
+/* Robotics event card */
+.div3{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(237, 217, 255);
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+/* Wrapper for main content */
+.container{
+    justify-content: center;
+}
+
+/* Details button style */
+#btn{
+    color: #680404;
+    border-radius: 15px;
+}
+
+/* Footer section at the bottom */
+.ftr{
+    background-color: blanchedalmond;
+    padding: 50px;
+}

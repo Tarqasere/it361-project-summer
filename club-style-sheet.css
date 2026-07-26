@@ -1,3 +1,13 @@
+:root{
+  --main:#0e046d;
+  --dark:#08072c;
+  --hover:#25082b;
+  --light:#d1cfff;
+  --white:#ffffff;
+}
+  
+           /*Made by Mohsen*/
+           
 body {
       margin: 0;
       font-family: "Roboto", sans-serif;
@@ -7,7 +17,7 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 25;
+      padding: 25px;
       border-radius: 0 0 0 0 ;
     }
     .logo {
@@ -204,5 +214,311 @@ body {
  box-shadow: 0 0 20px rgba(37, 8, 43, 0.5);
   filter: drop-shadow(0 0 15px #0e046d) drop-shadow(0 0 30px #08072c);
 }
+
+
+.site-footer {
+  background-color: #1b213d;
+  color: #ffffff;
+  padding: 30px 20px 15px 20px;
+  direction: rtl;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-about h3,
+.footer-links h4 {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+
+
+
+/* About page */
+/* Made by Osama */
+.about-page{
+   margin:0;
+   font-family:Arial, Helvetica, sans-serif;
+   background:#ffffff;
+   color:#333;
+}
+
+.about-page h1{
+    color: var(--main);
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0 10px;
+}
+
+.about-page h1::after{
+    content:"";
+    display:block;
+    width:100px;
+    height:4px;
+    background:var(--main);
+    margin:15px auto 0;
+    border-radius:10px;
+}
+
+.about-page h2{
+   color:var(--main);
+   border-left:5px solid var(--main);
+   padding-left:10px;
+   margin-top:35px;
+}
+
+.about-page p{
+   line-height:1.6;
+}
+
+.about-page hr{
+   border:none;
+   height:1px;
+   background:var(--light);
+   margin:30px 0;
+}
+
+.about-page form{
+   background:white;
+   border:1px solid var(--light);
+   border-radius:12px;
+   padding:20px;
+  box-shadow:0 0 12px rgba(14,4,109,.08);
+}
+
+.about-page label{
+   color:var(--main);
+   font-weight:bold;
+}
+
+.about-page input,
+.about-page textarea{
+   width:100%;
+   padding:10px;
+   margin-top:6px;
+   margin-bottom:15px;
+   border:1px solid var(--light);
+   border-radius:8px;
+   box-sizing:border-box;
+   transition:.3s;
+}
+
+.about-page input[type="text"]:focus,
+.about-page input[type="email"]:focus,
+.about-page textarea:focus{
+   outline:none;
+   border-color:#5443e9;
+   box-shadow:0 0 10px rgba(84,67,233,0.35);
+   transform:translateY(-2px);
+}
+
+.about-page button{
+   padding:10px 22px;
+   border:none;
+   border-radius:8px;
+   cursor:pointer;
+   transition:.3s;
+}
+
+.about-page button[type="submit"]{
+   background:var(--main);
+   color:white;
+}
+
+.about-page button[type="submit"]:hover{
+   background:var(--hover);
+   transform:scale(1.05);
+   box-shadow:0 0 20px rgba(37,8,43,.5);
+   filter:drop-shadow(0 0 10px #0e046d);
+}
+
+.about-page button[type="reset"]{
+   background:white;
+   color:var(--main);
+   border:1px solid var(--main);
+}
+
+.about-page button[type="reset"]:hover{
+   background:var(--light);
+}
+
+.about-page > p:last-child{
+   margin-top:40px;
+   background:linear-gradient(90deg,var(--dark),var(--main));
+   color:white;
+   text-align:center;
+   padding:15px;
+}
+
+.about-page .team-members{
+   display:flex;
+   justify-content:center;
+   gap:20px;
+   flex-wrap:wrap;
+   margin-top:20px;
+}
+
+.about-page .member{
+   width:150px;
+   padding:15px;
+   text-align:center;
+   border:1px solid var(--light);
+   border-radius:10px;
+   background:white;
+   color:var(--main);
+   font-weight:bold;
+   box-shadow:0 0 8px rgba(14,4,109,.1);
+   transition:.3s;
+}
+
+.about-page .member:hover{
+   transform:scale(1.05);
+   box-shadow:0 0 20px rgba(37,8,43,.3);
+} 
    
-   
+
+/*Made by Mohamed Bafakeh*/
+/* Base margins for the page layout */
+body{
+    margin: 0px;
+}
+main{
+    margin: 20px;
+}
+
+/* Page titles */
+h1{
+    text-align: center;
+}
+
+/* Header background color */
+.hdr{
+    background-color: bisque;
+    padding: 20px;
+}
+
+/* Navigation bar list styling */
+.navbar ul{
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Navigation menu links */
+.navbar a{
+    color: rgb(44, 43, 43);
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Hover effect on navbar buttons */
+.navbar a:hover{
+    background-color: rgb(134, 61, 61);
+    color: white;
+    border-radius: 5px;
+}
+.navbar li{
+    text-align: center;
+}
+
+/* Sizing for event images */
+.mathImg{
+    width: 500px;
+    height: auto;
+}
+
+.phyImg{
+    width: 500px;
+    height: auto;
+}
+
+.robImg{
+    width: 500px;
+    height: auto;
+}
+
+/* Math event card */
+.div1{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(172, 86, 253);
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+/* Physics event card */
+.div2{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(216, 173, 255);
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 1200px;
+    padding: 10px;
+}
+
+/* Robotics event card */
+.div3{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(237, 217, 255);
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+/* Wrapper for main content */
+.container{
+    justify-content: center;
+}
+
+/* Details button style */
+#btn{
+    color: #680404;
+    border-radius: 15px;
+}
+
+/* Footer section at the bottom */
+.ftr{
+    background-color: blanchedalmond;
+    padding: 50px;
+}

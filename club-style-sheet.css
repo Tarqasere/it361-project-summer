@@ -81,6 +81,9 @@ body {
        align-items: center;
        color: #fff;
        border-radius: 0 0 20px 20px;
+       width: auto !important;
+       margin-left: -20px !important;
+       margin-right: -20px !important;
      }
    .landing-page-action input{
     
@@ -522,3 +525,11 @@ h1{
     background-color: blanchedalmond;
     padding: 50px;
 }
+
+/*Made by Mohsen*/
+ .site-footer {
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+    margin-bottom: -20px !important;
+    width: auto !important;
+} 

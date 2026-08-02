@@ -8,8 +8,8 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="events.html;">Events</a></li>
-        <li><a href="About.html">About us</a></li>
+        <li><a href="events.php">Events</a></li>
+        <li><a href="About.php">About us</a></li>
       </ul>
     </div>
   </div>

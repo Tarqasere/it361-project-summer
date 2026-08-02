@@ -18,7 +18,7 @@
     <nav class="header-links">
       <a href="index.php" class="active">Home</a>
       <a href="events.php">Events</a>
-      <a href="About.html">About Us</a>
+      <a href="About.php">About Us</a>
       <button class="btn btn-signin">Sign in</button>
     </nav>
   </header>

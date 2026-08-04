@@ -57,10 +57,7 @@ if (isset($_GET["sent"]) && $_GET["sent"] === "1") {
     $messageType = "success";
 }
 
-/*
-    These variables can be used inside header.php
-    to change the title and active navigation link.
-*/
+
 $pageTitle = "About and Contact";
 $activePage = "about";
 
@@ -92,10 +89,10 @@ include "header.php";
 
         <div class="team-members">
 
-            <div class="member">Student Name 1</div>
-            <div class="member">Student Name 2</div>
-            <div class="member">Student Name 3</div>
-            <div class="member">Student Name 4</div>
+            <div class="member">Mohsen Othman</div>
+            <div class="member">Mohamed Bafakeh</div>
+            <div class="member">Tariq Asiri</div>
+            <div class="member">Osama Alotaibi</div>
 
         </div>
 

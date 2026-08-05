@@ -410,115 +410,154 @@ body {
    
 
 /*Made by Mohamed Bafakeh*/
-/* Base margins for the page layout */
-body{
-    margin: 0px;
-}
-main{
-    margin: 20px;
-}
-
-/* Page titles */
-h1{
-    text-align: center;
+:root {
+  --main: #0e046d;
+  --dark: #08072c;
+  --hover: #25082b;
+  --light: #d1cfff;
+  --white: #ffffff;
 }
 
-/* Header background color */
-.hdr{
-    background-color: bisque;
-    padding: 20px;
+/* reset margins */
+body {
+  margin: 0px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
-/* Navigation bar list styling */
-.navbar ul{
-    margin: 0px;
-    padding: 0%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
+main {
+  margin: 20px;
 }
 
-/* Navigation menu links */
-.navbar a{
-    color: rgb(44, 43, 43);
-    text-decoration: none;
-    text-align: center;
-    display:block;
-    padding: 15px;
-    font-weight: bold;
+/* titles */
+h1 {
+  text-align: center;
+  color: var(--main);
 }
 
-/* Hover effect on navbar buttons */
-.navbar a:hover{
-    background-color: rgb(134, 61, 61);
-    color: white;
-    border-radius: 5px;
-}
-.navbar li{
-    text-align: center;
+/* header */
+.header {
+  background-color: #1b213d;
+  padding: 20px;
 }
 
-/* Sizing for event images */
-.mathImg{
-    width: 500px;
-    height: auto;
+/* nav list */
+.header-links ul {
+  margin: 0px;
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
 }
 
-.phyImg{
-    width: 500px;
-    height: auto;
+/* nav links */
+.header-links a {
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  font-weight: bold;
 }
 
-.robImg{
-    width: 500px;
-    height: auto;
+/* nav hover */
+.header-links a:hover {
+  background-color: #547ff7;
+  color: white;
+  border-radius: 5px;
 }
 
-/* Math event card */
-.div1{
-    width: 550px;
-    height: 500px;
-    background-color: rgb(172, 86, 253);
-    text-align: center;
-    border-radius: 15px;
-    justify-content: center;
-    margin-left: 100px;
-    padding: 10px;
+.header-links li {
+  text-align: center;
 }
 
-/* Physics event card */
-.div2{
-    width: 550px;
-    height: 500px;
-    background-color: rgb(216, 173, 255);
-    text-align: center;
-    border-radius: 15px;
-    margin-left: 1200px;
-    padding: 10px;
+/* image sizes */
+.mathImg, .phyImg, .robImg {
+  width: 500px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
 }
 
-/* Robotics event card */
-.div3{
-    width: 550px;
-    height: 500px;
-    background-color: rgb(237, 217, 255);
-    text-align: center;
-    border-radius: 15px;
-    justify-content: center;
-    margin-left: 100px;
-    padding: 10px;
+/* event cards */
+.div1, .div2, .div3, .event-details-card {
+  width: 550px;
+  min-height: 500px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(37, 8, 43, 0.3);
 }
 
-/* Wrapper for main content */
-.container{
-    justify-content: center;
+/* card colors */
+.div1, .event-details-card { 
+  background-color: var(--light); color: var(--dark); 
+}
+.div2 {
+  background-color: var(--white); border: 2px solid var(--light); color: var(--dark); 
+  }
+.div3 {
+  background-color: #e8e6ff; color: var(--dark); 
+  }
+
+/* details page links */
+.back-link {
+  color: var(--main);
+  font-weight: bold;
+  text-decoration: none;
 }
 
-/* Details button style */
-#btn{
-    color: #680404;
-    border-radius: 15px;
+.closed-msg {
+  color: var(--white);
+  font-weight: bold;
+  background: var(--dark);
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons */
+#btn {
+  color: rgb(222, 224, 245);
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+background-color: #3235e2;
+}
+
+#btn:hover {
+  background-color: #070225;
+  color: white;
+}
+
+/* footer */
+.site-footer {
+  background-color: #1b213d;
+  padding: 50px;
+  text-align: center;
+}
+
+.site-footer nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.site-footer nav a:hover {
+  color: var(--white);
 }
 
 /* Footer section at the bottom */

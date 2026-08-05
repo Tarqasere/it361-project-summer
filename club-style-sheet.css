@@ -599,3 +599,53 @@ th {
     }
 
 }
+
+
+.register-box{
+    background-color:white;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.register-box h1{
+    color:#0e046d;
+}
+
+.register-box label{
+    color:#0e046d;
+    font-weight:bold;
+}
+
+.register-box input,
+.register-box select{
+    border:1px solid #d1cfff;
+    border-radius:8px;
+}
+
+.register-box input:focus,
+.register-box select:focus{
+    outline:none;
+    border-color:#5443e9;
+}
+
+.register-box a,
+.list-box a{
+    text-decoration:none;
+}
+
+.list-box h1{
+    color:#0e046d;
+}
+
+.list-box table{
+    background-color:white;
+}
+
+.list-box th{
+    background-color:#3235e2;
+    color:white;
+}
+
+.list-box tr:nth-child(even){
+    background-color:#f2f2ff;
+}

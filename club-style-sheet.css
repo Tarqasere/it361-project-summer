@@ -560,6 +560,12 @@ background-color: #3235e2;
   color: var(--white);
 }
 
+/* Footer section at the bottom */
+.ftr{
+    background-color: blanchedalmond;
+    padding: 50px;
+}
+
 /*Made by Mohsen*/
  .site-footer {
     margin-left: -20px !important;

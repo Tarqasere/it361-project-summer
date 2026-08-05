@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Register</title>
+    <title>Event Registration</title>
 
     <link rel="stylesheet" href="club-style-sheet.css">
 </head>
@@ -36,7 +36,7 @@
             <option value="3">Robotics Event</option>
         </select>
 
-        <input type="submit" value="Register">
+        <input class="btn" type="submit" value="Register">
 
     </form>
 

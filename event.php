@@ -6,7 +6,7 @@ if (isset($_GET['id'])) {
 }
 
 $selectedEvent = null;
-$csvFile = 'data/events.csv';
+$csvFile = 'data_events.csv';
 
 // if we have an id and the file exists, try to find the event
 if ($selectedId != null && file_exists($csvFile)) {
@@ -33,17 +33,17 @@ if ($selectedId != null && file_exists($csvFile)) {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="club-style-sheet.css" />
     <title>Event Details</title>
 </head>
 <body>
     <!-- main header (shared across pages) -->
     <header class="header">
-        <img class="logo" src="images/LogoPT.png" alt="Campus Hub Logo" width="100" />
+        <a href="index.php"><img class="logo" src="images/LogoPT.png" alt="Campus Hub Logo" width="100" /></a>
         <nav class="header-links">
             <a href="index.php">Home</a>
             <a href="events.php" class="active">Events</a>
-            <a href="About.php">About Us</a>
+            <a href="About.php">About Us/Contact Us</a>
             <button class="btn btn-signin">Sign in</button>
         </nav>
     </header>

@@ -10,7 +10,7 @@
         Explore our upcoming events below and register to secure your spot!
       </p>
       <div class="landing-page-action">
-        <button class="btn">Register Now</button>
+       
       </div>
     </div>
     
@@ -24,7 +24,7 @@
     <div class="Events-Header">
       <h1>Check out the most popular Events</h1>
       <div class="view-all-container">
-        <button class="btn">View All</button>
+       <button class="btn" onclick="window.location.href='events.php'">View All</button>
       </div>
     </div>
     <div class="Event-cards">

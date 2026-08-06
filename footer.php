@@ -15,5 +15,7 @@
   </div>
   <div class="footer-bottom">
     <p>&copy; 2026 Campus Events Hub - All rights reserved</p>
-  </body>
+  </div>
+</footer>
+</body>
 </html>

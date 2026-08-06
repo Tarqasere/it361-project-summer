@@ -1,7 +1,7 @@
 <?php
 // store all events here after reading the file
 $events = [];
-$csvFile = 'data/events.csv';
+$csvFile = 'data_events.csv';
 
 // if the CSV file exists, load the data from it
 if (file_exists($csvFile)) {
@@ -27,17 +27,19 @@ if (file_exists($csvFile)) {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="club-style-sheet.css" />
     <title>Events - Campus Events Hub</title>
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="images/LogoPT.png" alt="Campus Hub Logo" width="100" />
+          <a href="index.php"><img class="logo" src="images/LogoPT.png" alt="Campus Hub Logo" width="100" />
         <nav class="header-links">
             <a href="index.php">Home</a>
             <a href="events.php" class="active">Events</a>
-            <a href="About.php">About Us</a>
-            <button class="btn btn-signin">Sign in</button>
+            <a href="About.php">About Us/Contact Us</a>
+            <a href="register.php">
+                <button class="btn">Sign in</button>
+            </a>
         </nav>
     </header>
 

@@ -14,11 +14,13 @@
 </head>
 <body>
   <header class="header">
-    <img class="logo" src="images/LogoPT.png" alt="Campus Hub Logo" width="100" />
+    <a href="index.php"><img class="logo" src="images/LogoPT.png" alt="Campus Hub Logo" width="100" /></a>
+  
     <nav class="header-links">
       <a href="index.php" class="active">Home</a>
       <a href="events.php">Events</a>
-      <a href="About.php">About Us</a>
-      <button class="btn btn-signin">Sign in</button>
+      <a href="About.php">About Us/Contact Us</a>
+      <a href="register.php"><button class="btn">Sign in</button>
+</a>
     </nav>
   </header>

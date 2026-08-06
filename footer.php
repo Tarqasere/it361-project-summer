@@ -9,7 +9,7 @@
       <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="events.php">Events</a></li>
-        <li><a href="About.php">About us</a></li>
+        <li><a href="About.php">About us/Contact us</a></li>
       </ul>
     </div>
   </div>

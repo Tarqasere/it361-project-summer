@@ -545,3 +545,107 @@ background-color: #3235e2;
     margin-bottom: -20px !important;
     width: auto !important;
 } 
+
+/*made by mohsen for responsive design*/
+
+@media (max-width: 768px) {
+
+  .header, 
+  .header-links {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .header-links li {
+    display: block !important;
+    margin: 15px 0;
+  }
+
+  .header-links a {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .landing-page {
+    display: block !important;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .landing-page-left, 
+  .image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Events-container {
+    padding: 20px 10px;
+  }
+
+  .Events-Header, 
+  .Event-cards {
+    display: block !important;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+    margin: 15px auto !important;
+  }
+
+  .container, 
+  .div1, 
+  .event-details-card, 
+  .register-box, 
+  .list-box {
+    width: 90%;
+    margin: 20px auto !important;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .mathImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-members {
+    display: block !important;
+  }
+  
+  .team-members > div {
+    margin-bottom: 15px;
+  }
+
+  .about-page, 
+  .about-section, 
+  .team-section, 
+  .contact-section {
+    padding: 15px;
+    text-align: center;
+  }
+
+  input, 
+  select, 
+  textarea, 
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .table-box {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .footer-container {
+    display: block !important;
+    text-align: center;
+    padding: 15px 0;
+  }
+}

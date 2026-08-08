@@ -1,51 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include "header.php"; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Event Registration</title>
-
-    <link rel="stylesheet" href="club-style-sheet.css">
-</head>
-
-<body>
+<main>
 
 <div class="register-box">
 
-    <h1>Event Registration</h1>
+<h1>Event Registration</h1>
 
-    <form action="process_registration.php" method="POST">
+<form action="process_registration.php" method="POST">
 
-        <label>Student Name</label>
-        <input type="text" name="student_name" required>
+<label>Student Name</label>
+<input type="text" name="student_name" required>
 
-        <label>Student ID</label>
-        <input type="text" name="student_id" required>
+<label>Student ID</label>
+<input type="text" name="student_id" required>
 
-        <label>Email</label>
-        <input type="email" name="email" required>
+<label>Email</label>
+<input type="email" name="email" required>
 
-        <label>Select Event</label>
+<label>Select Event</label>
 
-        <select name="event_id" required>
-            <option value="">Choose Event</option>
-            <option value="1">Math Event</option>
-            <option value="2">Physics Event</option>
-            <option value="3">Robotics Event</option>
-        </select>
+<select name="event_id" required>
+    <option value="">Choose Event</option>
+    <option value="1">Math Event</option>
+    <option value="2">Physics Event</option>
+    <option value="3">Robotics Event</option>
+</select>
 
-        <input class="btn" type="submit" value="Register">
+<input class="btn" type="submit" value="Register">
 
-    </form>
+</form>
 
-    <br>
+<br>
 
-    <a href="registrations.php">View Registration List</a>
+<a href="registrations.php">View Registration List</a>
 
 </div>
 
-</body>
+</main>
 
-</html>
+<?php include "footer.php"; ?>

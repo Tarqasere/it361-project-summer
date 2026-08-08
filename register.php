@@ -20,19 +20,22 @@
 <label>Select Event</label>
 
 <select name="event_id" required>
-    <option value="">Choose Event</option>
-    <option value="1">Math Event</option>
-    <option value="2">Physics Event</option>
-    <option value="3">Robotics Event</option>
+
+<option value="">Choose Event</option>
+
+<option value="4">Artificial Intelligence Event</option>
+
+<option value="1">Math Event</option>
+
+<option value="2">Physics Event</option>
+
+<option value="3">Robotics Event</option>
+
 </select>
 
 <input class="btn" type="submit" value="Register">
 
 </form>
-
-<br>
-
-<a href="registrations.php">View Registration List</a>
 
 </div>
 

@@ -3,13 +3,13 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="club-style-sheet.css">
+    <link rel="stylesheet" href="club-style-sheet.css">
 
-<title>Campus Events Hub</title>
+    <title>Campus Events Hub</title>
 
 </head>
 
@@ -17,18 +17,20 @@
 
 <header class="header">
 
-<img class="logo" src="images/LogoPT.png" width="80">
+    <img class="logo" src="images/LogoPT.png" width="80">
 
-<nav class="header-links">
+    <nav class="header-links">
 
-<a href="index.php">Home</a>
+        <a href="index.php">Home</a>
 
-<a href="events.php">Events</a>
+        <a href="events.php">Events</a>
 
-<a href="About.html">About Us</a>
+        <a href="register.php">Registration</a>
 
-<button class="btn">Sign in</button>
+        <a href="About.php">About Us</a>
 
-</nav>
+        <button class="btn">Sign in</button>
+
+    </nav>
 
 </header>

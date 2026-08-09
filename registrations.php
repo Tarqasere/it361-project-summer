@@ -67,11 +67,11 @@ if (file_exists($filePath)) {
 
                 echo "<tr>";
 
-                echo "<td>" . htmlspecialchars($row[0]) . "</td>";
-                echo "<td>" . htmlspecialchars($row[1]) . "</td>";
-                echo "<td>" . htmlspecialchars($row[2]) . "</td>";
-                echo "<td>" . htmlspecialchars($row[3]) . "</td>";
-                echo "<td>" . htmlspecialchars($row[4]) . "</td>";
+                echo "<td>" . $row[0] . "</td>";
+                echo "<td>" . $row[1] . "</td>";
+                echo "<td>" . $row[2] . "</td>";
+                echo "<td>" . $row[3] . "</td>";
+                echo "<td>" . $row[4] . "</td>";
 
                 echo "</tr>";
             }
@@ -90,7 +90,7 @@ if (file_exists($filePath)) {
 
     <br>
 
-    <a href="register.php">Back to Registration</a>
+    <a class="btn" href="register.php">Back to Registration</a>
 
 </div>
 

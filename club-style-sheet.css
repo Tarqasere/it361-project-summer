@@ -30,31 +30,25 @@ body {
       filter: drop-shadow(0 0 15px #d8dce4) drop-shadow(0 0 30px #c2c1d8) ;
       
     }
-    .header {
-  background-color: #1b213d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
-
-.header-links {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.header-links a {
-  color: white;
-  padding: 8px 12px;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.header-links a:hover {
-  background-color: #547ff7;
-}
+    .header-links a {
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    .header-links a:hover {
+      background-color: #547ff7;
+       transform: scale(1.05);
+     box-shadow: 0 0 20px rgba(37, 8, 43, 0.5);
+     filter: drop-shadow(0 0 15px #6e80e6) drop-shadow(0 0 30px #5085f7);
+    }
+    .header-links button {
+      background-color: #5443e9;
+      color: rgb(240, 235, 240);
+      padding: 10px 30px;
+      border: none;
+      border-radius: 15px;
+    }
                 
           /*For button*/
           .btn {
@@ -88,7 +82,6 @@ body {
        color: #fff;
        border-radius: 0 0 20px 20px;
        width: auto !important;
-       margin-top: -20px !important;
        margin-left: -20px !important;
        margin-right: -20px !important;
      }
@@ -416,120 +409,115 @@ body {
    
 
 /*Made by Mohamed Bafakeh*/
-:root {
-  --main: #0e046d;
-  --dark: #08072c;
-  --hover: #25082b;
-  --light: #d1cfff;
-  --white: #ffffff;
+/* Base margins for the page layout */
+body{
+    margin: 0px;
+}
+main{
+    margin: 20px;
 }
 
-/* reset margins */
-body {
-  margin: 0px;
-  font-family: "Roboto", Arial, sans-serif;
+/* Page titles */
+h1{
+    text-align: center;
 }
 
-main {
-  margin: 20px;
+/* Header background color */
+.hdr{
+    background-color: bisque;
+    padding: 20px;
 }
 
-/* titles */
-h1 {
-  text-align: center;
-  color: var(--main);
+/* Navigation bar list styling */
+.navbar ul{
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
 }
 
-/* header */
-
-
-/* image sizes */
-.mathImg, .phyImg, .robImg {
-  width: 500px;
-  max-width: 90%;
-  height: auto;
-  border-radius: 8px;
+/* Navigation menu links */
+.navbar a{
+    color: rgb(44, 43, 43);
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    padding: 15px;
+    font-weight: bold;
 }
 
-/* event cards */
-.div1, .div2, .div3, .event-details-card {
-  width: 550px;
-  min-height: 500px;
-  text-align: center;
-  border-radius: 15px;
-  margin: 0 auto 30px auto;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(37, 8, 43, 0.3);
+/* Hover effect on navbar buttons */
+.navbar a:hover{
+    background-color: rgb(134, 61, 61);
+    color: white;
+    border-radius: 5px;
+}
+.navbar li{
+    text-align: center;
 }
 
-/* card colors */
-.div1, .event-details-card { 
-  background-color: var(--light); color: var(--dark); 
-}
-.div2 {
-  background-color: var(--white); border: 2px solid var(--light); color: var(--dark); 
-  }
-.div3 {
-  background-color: #e8e6ff; color: var(--dark); 
-  }
-
-/* details page links */
-.back-link {
-  color: var(--main);
-  font-weight: bold;
-  text-decoration: none;
+/* Sizing for event images */
+.mathImg{
+    width: 500px;
+    height: auto;
 }
 
-.closed-msg {
-  color: var(--white);
-  font-weight: bold;
-  background: var(--dark);
-  padding: 10px;
-  border-radius: 8px;
-  display: inline-block;
+.phyImg{
+    width: 500px;
+    height: auto;
 }
 
-/* container */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.robImg{
+    width: 500px;
+    height: auto;
 }
 
-/* buttons */
-#btn {
-  color: rgb(222, 224, 245);
-  border-radius: 15px;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-background-color: #3235e2;
+/* Math event card */
+.div1{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(172, 86, 253);
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 10px;
 }
 
-#btn:hover {
-  background-color: #070225;
-  color: white;
+/* Physics event card */
+.div2{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(216, 173, 255);
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 1200px;
+    padding: 10px;
 }
 
-/* footer */
-.site-footer {
-  background-color: #1b213d;
-  padding: 50px;
-  text-align: center;
+/* Robotics event card */
+.div3{
+    width: 550px;
+    height: 500px;
+    background-color: rgb(237, 217, 255);
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    margin-left: 100px;
+    padding: 10px;
 }
 
-.site-footer nav a {
-  color: var(--light);
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
+/* Wrapper for main content */
+.container{
+    justify-content: center;
 }
 
-.site-footer nav a:hover {
-  color: var(--white);
+/* Details button style */
+#btn{
+    color: #680404;
+    border-radius: 15px;
 }
 
 /* Footer section at the bottom */
@@ -546,106 +534,118 @@ background-color: #3235e2;
     width: auto !important;
 } 
 
-/*made by mohsen for responsive design*/
 
-@media (max-width: 768px) {
 
-  .header, 
-  .header-links {
-    display: block !important;
+.register-box {
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.register-box input,
+.register-box select {
     width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .header-links li {
-    display: block !important;
-    margin: 15px 0;
-  }
-
-  .header-links a {
-    display: inline-block;
-    padding: 5px;
-  }
-
-  .landing-page {
-    display: block !important;
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  .landing-page-left, 
-  .image-container {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .Events-container {
-    padding: 20px 10px;
-  }
-
-  .Events-Header, 
-  .Event-cards {
-    display: block !important;
-  }
-
-  .card {
-    width: 90%;
-    max-width: 320px;
-    margin: 15px auto !important;
-  }
-
-  .container, 
-  .div1, 
-  .event-details-card, 
-  .register-box, 
-  .list-box {
-    width: 90%;
-    margin: 20px auto !important;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  .mathImg {
-    width: 100%;
-    height: auto;
-  }
-
-  .team-members {
-    display: block !important;
-  }
-  
-  .team-members > div {
+    padding: 8px;
+    margin-top: 5px;
     margin-bottom: 15px;
-  }
-
-  .about-page, 
-  .about-section, 
-  .team-section, 
-  .contact-section {
-    padding: 15px;
-    text-align: center;
-  }
-
-  input, 
-  select, 
-  textarea, 
-  button {
-    width: 100%;
     box-sizing: border-box;
-  }
+}
 
-  .table-box {
+.register-box label {
+    display: block;
+}
+
+.list-box {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.table-box {
     overflow-x: auto;
-  }
+}
 
-  table {
+table {
     width: 100%;
-  }
+    border-collapse: collapse;
+    min-width: 600px;
+}
 
-  .footer-container {
-    display: block !important;
-    text-align: center;
-    padding: 15px 0;
-  }
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 600px) {
+
+    .register-box {
+        width: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .list-box {
+        width: auto;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+}
+
+
+.register-box{
+    background-color:white;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.register-box h1{
+    color:#0e046d;
+}
+
+.register-box label{
+    color:#0e046d;
+    font-weight:bold;
+}
+
+.register-box input,
+.register-box select{
+    border:1px solid #d1cfff;
+    border-radius:8px;
+}
+
+.register-box input:focus,
+.register-box select:focus{
+    outline:none;
+    border-color:#5443e9;
+}
+
+.register-box a,
+.list-box a{
+    text-decoration:none;
+}
+
+.list-box h1{
+    color:#0e046d;
+}
+
+.list-box table{
+    background-color:white;
+}
+
+.list-box th{
+    background-color:#3235e2;
+    color:white;
+}
+
+.list-box tr:nth-child(even){
+    background-color:#f2f2ff;
 }

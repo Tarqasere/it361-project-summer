@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="club-style-sheet.css">
-
-    <title>Campus Events Hub</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="club-style-sheet.css" />
+  <title>IT361 project</title>
 </head>
-
 <body>
-
-<header class="header">
-
-    <img class="logo" src="images/LogoPT.png" width="80">
-
+  <header class="header">
+    <a href="index.php"><img class="logo" src="images/LogoPT.png" alt="Campus Hub Logo" width="100" /></a>
+  
     <nav class="header-links">
-
-        <a href="index.php">Home</a>
-
-        <a href="events.php">Events</a>
-
-        <a href="register.php">Registration</a>
-
-        <a href="About.php">About Us</a>
-
-        <button class="btn">Sign in</button>
-
+      <a href="index.php" class="active">Home</a>
+      <a href="events.php">Events</a>
+      <a href="About.php">About Us/Contact Us</a>
+      <a href="register.php"><button class="btn">Sign in</button>
+</a>
     </nav>
-
-</header>
+  </header>

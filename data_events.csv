@@ -1,0 +1,5 @@
+id,title,description,image,is_open
+4,"Artificial Intelligence Event","Explore the future of tech! Join our AI Event to dive into machine learning, neural networks, and modern AI applications. Learn how intelligent systems are built through interactive presentations and live demos.",images/Ai.jpg,1
+1,"Math Event","Ready to put your logic skills to the test? Our Math Event is all about solving fun challenges and thinking through real-world problems. You will get to participate in interactive puzzles, quick quizzes, and group activities with other students who love math.",images/MATH.jpg,0
+2,"Physics Event","Curious about how the universe actually works? Join us for our Physics Event! We are bringing physical concepts to life through hands-on experiments, interactive demos, and open discussions on motion, energy, and modern physics.",images/PHISICS.jpg,0
+3,"Robotics Event","Curious about how robots are built and programmed? Join us for our Robotics Event! We will walk through the basics of design, code, and automation, plus feature some live hands-on demonstrations.",images/ROBOTICS.jpg,0

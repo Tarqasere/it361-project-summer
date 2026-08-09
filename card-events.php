@@ -1,0 +1,68 @@
+<main>
+  <section class="landing-page">
+    <div class="landing-page-left">
+      <h1>Welcome to the Campus Hub</h1>
+      <p>
+        The official Campus Event Hub hosted by the Department of Computer Science and Information Technology.
+        Our mission is to bridge the gap between classroom theory and real-world technology.
+        Throughout the year, we host hands on workshops and academic seminars and exciting tech exhibitions designed to spark innovation
+        foster collaboration and build the skills you need for a successful career in IT.
+        Explore our upcoming events below and register to secure your spot!
+      </p>
+      <div class="landing-page-action">
+       
+      </div>
+    </div>
+    
+    <div class="landing-page-right">
+       <img class="image-container" src="images/AI.jpg" alt="AI Event Illustration" width="300" />
+    </div>
+  </section>
+
+  <section class="Events-container">
+    <span>More Events</span>
+    <div class="Events-Header">
+      <h1>Check out the most popular Events</h1>
+      <div class="view-all-container">
+       <button class="btn" onclick="window.location.href='events.php'">View All</button>
+      </div>
+    </div>
+    <div class="Event-cards">
+      <div class="card">
+        <div class="card-effect">
+          <img class="thumb" src="images/MATH.jpg" alt="Math Event" />
+          <div class="card-info">
+            <div class="card-name">
+              <p>Event</p> 
+              <h3>Math</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-effect">
+          <img class="thumb" src="images/PHISICS.jpg" alt="Physics Event" />
+          <div class="card-info">
+            <div class="card-name">
+              <p>Event</p> 
+              <h3>Physics</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-effect">
+          <img class="thumb" src="images/ROBOTICS.jpg" alt="Robotics Event" />
+          <div class="card-info">
+            <div class="card-name">
+              <p>Event</p> 
+              <h3>Robotics</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
